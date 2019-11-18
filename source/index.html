@@ -178,14 +178,17 @@
 
       <section class="register">
         <h2 class="visually-hidden">Регистрация в приложении «Погнали»</h2>
-        <b class="register">Заинтересовались?</b>
+        <b class="register__tagline">Заинтересовались?</b>
         <p class="register__text">Зарегистрируйтесь, это быстро и бесплатно!</p>
         <p class="register__text">Уже зарегистрированы? Тогда скорее <a class="register__link-login" href="login.html">авторизуйтесь.</a></p>
-        <!-- Здесь будет форма отправки емейла -->
+        <form class="register__form form-login" action="https://echo.htmlacademy.ru" method="post">
+          <input class="form-login__input-email" type="text" name="user-email" placeholder="E-mail">
+          <button class="form-login__button" type="submit">Регистрация</button>
+        </form>
         <p class="register__text">Остались вопросы?</p>
         <p class="register__text">Мы с радостью на них ответим!</p>
-        <a class="register__link" href="tel:8800555-86-28">8 800 555-86-28</a>
-        <a class="register__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="register__contact register__contact--tel" href="tel:8800555-86-28">8 800 555-86-28</a>
+        <a class="register__contact register__contact--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </section>
 
       <section>
