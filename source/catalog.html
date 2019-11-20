@@ -46,11 +46,22 @@
           <fieldset class="catalog-form__fieldset filter-country">
             <legend class="filter-country__title">Фильтрация по странам</legend>
             <button class="filter-country__toggle" type="button"><span class="visually-hidden">Открыть фильтр по странам</span></button>
-            <ul class="filter-country__continent-list">
-              <li class="filter-country__continent-item filter-country__continent-item--active">Европа</li>
-              <li class="filter-country__continent-item">Азия</li>
-              <li class="filter-country__continent-item">Америка</li>
-              <li class="filter-country__continent-item">Острова</li>
+            <ul class="filter-country__continent-list continents">
+              <li class="continents__item continents__item--active">
+                <input class="continents__radio visually-hidden" type="radio" name="country" id="continent-europe" value="Europe" checked>
+                <label class="continents__label" for="continent-europe">Европа</label>
+              </li>
+              <li class="continents__item">
+                <input class="continents__radio visually-hidden" type="radio" name="country" id="continent-asia" value="Asia">
+                <label class="continents__label" for="continent-asia">Азия</label>
+              </li>
+              <li class="continents__item">
+                <input class="continents__radio visually-hidden" type="radio" name="country" id="continent-america" value="America">
+                <label class="continents__label" for="continent-america">Америка</label>
+              </li>
+              <li class="continents__item">
+                <input class="continents__radio visually-hidden" type="radio" name="country" id="continent-islands" value="Islands">
+                <label class="continents__label" for="continent-islands">Острова</label></li>
             </ul>
             <ul class="filter-country__abc-list">
               <li class="filter-country__abc-item filter-country__abc-item--active">А</li>
