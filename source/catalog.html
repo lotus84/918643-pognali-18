@@ -45,7 +45,7 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="catalog-form__fieldset filter-country">
             <legend class="filter-country__title">Фильтрация по странам</legend>
-            <button class="filter-country__close-button filter-country__close-button--top" type="button"><span class="visually-hidden">Свернуть</span></button>
+            <button class="filter-country__toggle" type="button"><span class="visually-hidden">Открыть фильтр по странам</span></button>
             <ul class="filter-country__continent-list">
               <li class="filter-country__continent-item filter-country__continent-item--active">Европа</li>
               <li class="filter-country__continent-item">Азия</li>
@@ -109,9 +109,75 @@
                 <span class="filter-country__country-counter">1</span>
               </li>
             </ul>
-            <button class="filter-country__close-button filter-country__close-button--bottom" type="button">Свернуть</button>
+            <button class="filter-country__close-button" type="button">Свернуть</button>
           </fieldset>
-          <fieldset></fieldset>
+          <p class="catalog-form__subtitle">Подберите идеального попутчика</p>
+          <fieldset class="catalog-form__subsection filter-hobby">
+            <legend>Хобби</legend>
+            <button class="toggle toggle--show" type="button">Открыть фильтр</button>
+          </fieldset>
+          <fieldset class="catalog-form__subsection filter-music">
+            <legend>Музыка</legend>
+            <button class="toggle toggle--hide" type="button">Открыть фильтр</button>
+            <ul class="filter-music__list">
+              <li class="filter-music__item">
+                <input class="filter-music__checkbox visually-hidden" type="checkbox" name="heavy-rock" id="filter-rock" checked>
+                <label class="filter-music__label" for="filter-rock">Тяжелый рок</label>
+              </li>
+              <li class="filter-music__item">
+                <input class="filter-music__checkbox visually-hidden" type="checkbox" name="russian-rap" id="filter-rap">
+                <label class="filter-music__label" for="filter-rap">Русский рэп</label>
+              </li>
+              <li class="filter-music__item">
+                <input class="filter-music__checkbox visually-hidden" type="checkbox" name="eurodance" id="filter-dance">
+                <label class="filter-music__label" for="filter-dance">Евроденс</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-form__subsection filter-food">
+            <legend>Еда</legend>
+            <button class="toggle toggle--show" type="button">Открыть фильтр</button>
+          </fieldset>
+          <fieldset class="catalog-form__subsection filter-transport">
+            <legend>Транспорт</legend>
+            <button class="toggle toggle--hide" type="button">Открыть фильтр</button>
+            <ul class="filter-transport__list">
+              <li class="filter-transport__item">
+                <input class="filter-transport__checkbox visually-hidden" type="checkbox" name="plane" id="filter-plane" checked>
+                <label class="filter-transportc__label" for="filter-plane">Самолет</label>
+              </li>
+              <li class="filter-transport__item">
+                <input class="filter-transport__checkbox visually-hidden" type="checkbox" name="car" id="filter-car" checked>
+                <label class="filter-transportc__label" for="filter-car">Машина</label>
+              </li>
+              <li class="filter-transport__item">
+                <input class="filter-transport__checkbox visually-hidden" type="checkbox" name="bicycle" id="filter-bicycle">
+                <label class="filter-transportc__label" for="filter-bicycle">Велосипед</label>
+              </li>
+              <li class="filter-transport__item">
+                <input class="filter-transport__checkbox visually-hidden" type="checkbox" name="walk" id="filter-walk" checked>
+                <label class="filter-transportc__label" for="filter-walk">Ходьба</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-form__subsection filter-level">
+            <legend>Левел</legend>
+            <button class="toggle toggle--hide" type="button">Открыть фильтр</button>
+            <div class="filter-level__value-level">
+              <label class="visually-hidden" for="min-field">От</label>
+              <input class="filter-level__min-level" id="min-field" type="number" name="min-level" value="30" min="0" max="100">
+              <label class="visually-hidden" for="max-field">До</label>
+              <input class="filter-level__max-level" id="max-field" type="number" name="max-level" value="100" min="0" max="100">
+            </div>
+            <div class="filter-level__controls">
+              <div class="filter-level__scale">
+                <div class="filter-level__bar"></div>
+              </div>
+              <div class="filter-level__toggle filter-level__toggle--min"></div>
+              <div class="filter-level__toggle filter-level__toggle--max"></div>
+            </div>
+          </fieldset>
+          <button class="catalog-form__submit" type="submit">Показать</button>
         </form>
       </section>
 
