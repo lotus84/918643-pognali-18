@@ -47,7 +47,7 @@
             <legend class="filter-country__title">Фильтрация по странам</legend>
             <button class="filter-country__toggle" type="button"><span class="visually-hidden">Открыть фильтр по странам</span></button>
             <ul class="filter-country__continent-list continents">
-              <li class="continents__item continents__item--active">
+              <li class="continents__item">
                 <input class="continents__radio visually-hidden" type="radio" name="country" id="continent-europe" value="Europe" checked>
                 <label class="continents__label" for="continent-europe">Европа</label>
               </li>
@@ -61,34 +61,110 @@
               </li>
               <li class="continents__item">
                 <input class="continents__radio visually-hidden" type="radio" name="country" id="continent-islands" value="Islands">
-                <label class="continents__label" for="continent-islands">Острова</label></li>
+                <label class="continents__label" for="continent-islands">Острова</label>
+              </li>
             </ul>
-            <ul class="filter-country__abc-list">
-              <li class="filter-country__abc-item filter-country__abc-item--active">А</li>
-              <li class="filter-country__abc-item">Б</li>
-              <li class="filter-country__abc-item">В</li>
-              <li class="filter-country__abc-item">Г</li>
-              <li class="filter-country__abc-item">Д</li>
-              <li class="filter-country__abc-item">Е</li>
-              <li class="filter-country__abc-item">З</li>
-              <li class="filter-country__abc-item">И</li>
-              <li class="filter-country__abc-item">К</li>
-              <li class="filter-country__abc-item">Л</li>
-              <li class="filter-country__abc-item">М</li>
-              <li class="filter-country__abc-item">Н</li>
-              <li class="filter-country__abc-item">О</li>
-              <li class="filter-country__abc-item">П</li>
-              <li class="filter-country__abc-item">Р</li>
-              <li class="filter-country__abc-item">С</li>
-              <li class="filter-country__abc-item">Т</li>
-              <li class="filter-country__abc-item">У</li>
-              <li class="filter-country__abc-item">Ф</li>
-              <li class="filter-country__abc-item">Х</li>
-              <li class="filter-country__abc-item">Ч</li>
-              <li class="filter-country__abc-item">Ш</li>
-              <li class="filter-country__abc-item">Э</li>
-              <li class="filter-country__abc-item">Ю</li>
-              <li class="filter-country__abc-item">Я</li>
+            <ul class="filter-country__abc-list abc">
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-a" value="А" checked>
+                <label class="abc__label" for="letter-a">А</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-b" value="Б">
+                <label class="abc__label" for="letter-b">Б</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-v" value="В">
+                <label class="abc__label" for="letter-v">В</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-g" value="Г">
+                <label class="abc__label" for="letter-g">Г</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-d" value="Д">
+                <label class="abc__label" for="letter-d">Д</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-e" value="Е">
+                <label class="abc__label" for="letter-e">Е</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-z" value="З">
+                <label class="abc__label" for="letter-z">З</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-i" value="И">
+                <label class="abc__label" for="letter-i">И</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-k" value="К">
+                <label class="abc__label" for="letter-k">К</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-l" value="Л">
+                <label class="abc__label" for="letter-l">Л</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-m" value="М">
+                <label class="abc__label" for="letter-m">М</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-n" value="Н">
+                <label class="abc__label" for="letter-n">Н</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-o" value="О">
+                <label class="abc__label" for="letter-o">О</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-p" value="П">
+                <label class="abc__label" for="letter-p">П</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-r" value="Р">
+                <label class="abc__label" for="letter-r">Р</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-s" value="С">
+                <label class="abc__label" for="letter-s">С</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-t" value="Т">
+                <label class="abc__label" for="letter-t">Т</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-u" value="У">
+                <label class="abc__label" for="letter-u">У</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-f" value="Ф">
+                <label class="abc__label" for="letter-f">Ф</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-h" value="Х">
+                <label class="abc__label" for="letter-h">Х</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-ch" value="Ч">
+                <label class="abc__label" for="letter-ch">Ч</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-sh" value="Ш">
+                <label class="abc__label" for="letter-sh">Ш</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-ee" value="Э">
+                <label class="abc__label" for="letter-ee">Э</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-yu" value="Ю">
+                <label class="abc__label" for="letter-yu">Ю</label>
+              </li>
+              <li class="abc__item">
+                <input class="abc__radio visually-hidden" type="radio" name="abc" id="letter-ya" value="Я">
+                <label class="abc__label" for="letter-ya">Я</label>
+              </li>
             </ul>
             <ul class="filter-country__country-list">
               <li class="filter-country__country-item">
