@@ -39,8 +39,53 @@
 
     <main class="page-main">
       <h1 class="page-main__title">Направления</h1>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="user-info">
+          <legend>
+            <span class="visually-hidden">Настройки</span>
+          </legend>
+          <div class="user-info__level round-level">
+            <span class="round-level__value">80</span>
+            <span class="round-level__text">level</span>
+          </div>
+          <div class="user-info__img-preview">
+            <img src="https://via.placeholder.com/100x100" width="100" height="100" alt="Предварительный просмотр фотографии">
+          </div>
+          <div class="user-info__img-upload">
+            <input class="visually-hidden" type="file" id="upload-file" name="filename"  accept="image/jpeg,image/png,image/gif">
+            <label for="upload-file">Сменить фото</label>
+          </div>
+          <fieldset class="user-info__hashtags">
+            <legend>Тэги</legend>
+            <textarea name="hashtags" placeholder="#бургер #бар #футбол #концерт #крафт"></textarea>
+          </fieldset>
+          <fieldset class="user-info__transport filter-transport">
+            <legend class="filter-transport__title">Транспорт</legend>
+            <ul class="filter-transport__list">
+              <li class="filter-transport__item">
+                <input class="filter-transport__checkbox visually-hidden" type="checkbox" name="plane" id="filter-plane" checked>
+                <label class="filter-transport__label" for="filter-plane">Самолет</label>
+              </li>
+              <li class="filter-transport__item">
+                <input class="filter-transport__checkbox visually-hidden" type="checkbox" name="car" id="filter-car" checked>
+                <label class="filter-transport__label" for="filter-car">Машина</label>
+              </li>
+              <li class="filter-transport__item">
+                <input class="filter-transport__checkbox visually-hidden" type="checkbox" name="bicycle" id="filter-bicycle">
+                <label class="filter-transport__label" for="filter-bicycle">Велосипед</label>
+              </li>
+              <li class="filter-transport__item">
+                <input class="filter-transport__checkbox visually-hidden" type="checkbox" name="walk" id="filter-walk" checked>
+                <label class="filter-transport__label" for="filter-walk">Ходьба</label>
+              </li>
+            </ul>
+          </fieldset>
+        </fieldset>
 
-      <!-- Здесь будет форма -->
+
+      </form>
+
+
 
     </main>
 
