@@ -42,7 +42,205 @@
 
       <section class="catalog-form">
         <h2 class="visually-hidden">Форма подбора идеального попутчика</h2>
-        <!-- Здесь будет форма -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="catalog-form__fieldset filter-country">
+            <legend class="filter-country__title">Фильтрация по странам</legend>
+            <button class="filter-country__toggle" type="button"><span class="visually-hidden">Открыть фильтр по странам</span></button>
+            <ul class="filter-country__continent-list continents">
+              <li class="continents__item">
+                <input class="continents__radio visually-hidden" type="radio" name="country" id="continent-europe" value="Europe" checked>
+                <label class="continents__label" for="continent-europe">Европа</label>
+              </li>
+              <li class="continents__item">
+                <input class="continents__radio visually-hidden" type="radio" name="country" id="continent-asia" value="Asia">
+                <label class="continents__label" for="continent-asia">Азия</label>
+              </li>
+              <li class="continents__item">
+                <input class="continents__radio visually-hidden" type="radio" name="country" id="continent-america" value="America">
+                <label class="continents__label" for="continent-america">Америка</label>
+              </li>
+              <li class="continents__item">
+                <input class="continents__radio visually-hidden" type="radio" name="country" id="continent-islands" value="Islands">
+                <label class="continents__label" for="continent-islands">Острова</label>
+              </li>
+            </ul>
+            <ul class="filter-country__abc-list abc">
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-a">А</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-b">Б</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-v">В</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-g">Г</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-d">Д</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-e">Е</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-z">З</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-i">И</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-k">К</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-l">Л</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-m">М</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-n">Н</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-o">О</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-p">П</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-r">Р</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-s">С</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-t">Т</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-u">У</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-f">Ф</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-h">Х</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-ch">Ч</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-sh">Ш</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-ee">Э</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-yu">Ю</button>
+              </li>
+              <li class="abc__item">
+                <button class="abc__letter" type="button" value="letter-ya">Я</button>
+              </li>
+            </ul>
+            <ul class="filter-country__country-list">
+              <li class="filter-country__country-item">
+                <a class="filter-country__country-name" href="/asia/afghanistan">Афганистан</a>
+              </li>
+              <li class="filter-country__country-item">
+                <a class="filter-country__country-name" href="/europe/albania">Албания</a>
+              </li>
+              <li class="filter-country__country-item">
+                <a class="filter-country__country-name" href="/africa/algeria">Алжир</a>
+              </li>
+              <li class="filter-country__country-item">
+                <a class="filter-country__country-name" href="/europe/andorra">Андорра</a>
+              </li>
+              <li class="filter-country__country-item">
+                <a class="filter-country__country-name" href="/america/argentina">Аргентина</a>
+              </li>
+              <li class="filter-country__country-item">
+                <a class="filter-country__country-name" href="/asia/armenia">Армения</a>
+              </li>
+              <li class="filter-country__country-item">
+                <a class="filter-country__country-name" href="/islands/australia">Австралия</a>
+              </li>
+              <li class="filter-country__country-item">
+                <a class="filter-country__country-name" href="/europe/austria">Австрия</a>
+              </li>
+              <li class="filter-country__country-item">
+                <a class="filter-country__country-name" href="/asia/azerbaijan">Азербайджан</a>
+                <span class="filter-country__country-counter">1</span>
+              </li>
+            </ul>
+            <button class="filter-country__close-button" type="button">Свернуть</button>
+          </fieldset>
+          <p class="catalog-form__subtitle">Подберите идеального попутчика</p>
+          <fieldset class="catalog-form__subsection filter-hobby">
+            <legend>Хобби</legend>
+            <button class="toggle toggle--show" type="button">Открыть фильтр</button>
+          </fieldset>
+          <fieldset class="catalog-form__subsection filter-music">
+            <legend>Музыка</legend>
+            <button class="toggle toggle--hide" type="button">Открыть фильтр</button>
+            <ul class="filter-music__list">
+              <li class="filter-music__item">
+                <input class="filter-music__checkbox visually-hidden" type="checkbox" name="heavy-rock" id="filter-rock" checked>
+                <label class="filter-music__label" for="filter-rock">Тяжелый рок</label>
+              </li>
+              <li class="filter-music__item">
+                <input class="filter-music__checkbox visually-hidden" type="checkbox" name="russian-rap" id="filter-rap">
+                <label class="filter-music__label" for="filter-rap">Русский рэп</label>
+              </li>
+              <li class="filter-music__item">
+                <input class="filter-music__checkbox visually-hidden" type="checkbox" name="eurodance" id="filter-dance">
+                <label class="filter-music__label" for="filter-dance">Евроденс</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-form__subsection filter-food">
+            <legend>Еда</legend>
+            <button class="toggle toggle--show" type="button">Открыть фильтр</button>
+          </fieldset>
+          <fieldset class="catalog-form__subsection filter-transport">
+            <legend class="filter-transport__title">Транспорт</legend>
+            <button class="toggle toggle--hide" type="button">Открыть фильтр</button>
+            <ul class="filter-transport__list">
+              <li class="filter-transport__item">
+                <input class="filter-transport__checkbox visually-hidden" type="checkbox" name="plane" id="filter-plane" checked>
+                <label class="filter-transport__label" for="filter-plane">Самолет</label>
+              </li>
+              <li class="filter-transport__item">
+                <input class="filter-transport__checkbox visually-hidden" type="checkbox" name="car" id="filter-car" checked>
+                <label class="filter-transport__label" for="filter-car">Машина</label>
+              </li>
+              <li class="filter-transport__item">
+                <input class="filter-transport__checkbox visually-hidden" type="checkbox" name="bicycle" id="filter-bicycle">
+                <label class="filter-transport__label" for="filter-bicycle">Велосипед</label>
+              </li>
+              <li class="filter-transport__item">
+                <input class="filter-transport__checkbox visually-hidden" type="checkbox" name="walk" id="filter-walk" checked>
+                <label class="filter-transport__label" for="filter-walk">Ходьба</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-form__subsection filter-level">
+            <legend>Левел</legend>
+            <button class="toggle toggle--hide" type="button">Открыть фильтр</button>
+            <div class="filter-level__value-level">
+              <label class="visually-hidden" for="min-field">От</label>
+              <input class="filter-level__min-level" id="min-field" type="number" name="min-level" value="30" min="0" max="100">
+              <label class="visually-hidden" for="max-field">До</label>
+              <input class="filter-level__max-level" id="max-field" type="number" name="max-level" value="100" min="0" max="100">
+            </div>
+            <div class="filter-level__controls">
+              <div class="filter-level__scale">
+                <div class="filter-level__bar"></div>
+              </div>
+              <div class="filter-level__toggle filter-level__toggle--min"></div>
+              <div class="filter-level__toggle filter-level__toggle--max"></div>
+            </div>
+          </fieldset>
+          <button class="catalog-form__submit" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">

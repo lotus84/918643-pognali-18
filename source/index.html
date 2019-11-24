@@ -178,18 +178,26 @@
 
       <section class="register">
         <h2 class="visually-hidden">Регистрация в приложении «Погнали»</h2>
-        <b class="register">Заинтересовались?</b>
+        <b class="register__tagline">Заинтересовались?</b>
         <p class="register__text">Зарегистрируйтесь, это быстро и бесплатно!</p>
         <p class="register__text">Уже зарегистрированы? Тогда скорее <a class="register__link-login" href="login.html">авторизуйтесь.</a></p>
-        <!-- Здесь будет форма отправки емейла -->
+        <form class="register__form form-login" action="https://echo.htmlacademy.ru" method="post">
+          <input class="form-login__input-email" type="text" name="user-email" placeholder="E-mail">
+          <button class="form-login__button" type="submit">Регистрация</button>
+        </form>
         <p class="register__text">Остались вопросы?</p>
         <p class="register__text">Мы с радостью на них ответим!</p>
-        <a class="register__link" href="tel:8800555-86-28">8 800 555-86-28</a>
-        <a class="register__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="register__contact register__contact--tel" href="tel:8800555-86-28">8 800 555-86-28</a>
+        <a class="register__contact register__contact--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </section>
 
-      <section>
-        <h2>Контакты</h2>
+      <section class="location">
+        <h2 class="visually-hidden">Адрес компании</h2>
+        <p class="location__address">ул. Большая Конюшенная, 19/8</p>
+        <a class="location__button-direction button" href="">Проложить маршрут</a>
+        <p class="location__map">
+          <img src="https://via.placeholder.com/320x320" width="320" height="320" alt="Офис компании по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        </p>
       </section>
     </main>
 
@@ -215,6 +223,29 @@
         </a>
       </div>
     </footer>
+
+    <section class="modal modal-tariff">
+      <h2 class="modal-tariff__title">Бизнес-тарифы</h2>
+      <ul class="modal-tariff__list">
+        <li class="modal-tariff__item">
+          <p class="modal-tariff__item-desc">Реклама у блоггера</p>
+          <p class="modal-tariff__item-price">300 000 руб./пост</p>
+        </li>
+        <li class="modal-tariff__item">
+          <p class="modal-tariff__item-desc">Накрутка подписчиков</p>
+          <p class="modal-tariff__item-price">от 1 руб./шт.</p>
+        </li>
+        <li class="modal-tariff__item">
+          <p class="modal-tariff__item-desc">Лайки от ботов</p>
+          <p class="modal-tariff__item-price">от 20 коп./лайк</p>
+        </li>
+        <li class="modal-tariff__item">
+          <p class="modal-tariff__item-desc">Ваш продакт-плейсмент</p>
+          <p class="modal-tariff__item-price">Индивидуально</p>
+        </li>
+      </ul>
+      <button class="modal-tariff__close">Закрыть окно</button>
+    </section>
 
   </body>
 </html>
